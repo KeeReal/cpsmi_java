@@ -1,9 +1,10 @@
-package task_1;
+package task_01_hello_world;
 
 public class main_01 {
     public static void main(String[] args) {
         String str = "Hello world";
-        for (int i = 0; i < 100; ++i) {
+        int i = 100;
+        while (--i >= 0) {
             System.out.println(str);
         }
     }

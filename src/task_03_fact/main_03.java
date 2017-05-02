@@ -29,7 +29,7 @@ public class main_03 {
 
         System.out.println("got: " + arg);
 
-        HashMap<Integer, Integer> buffer = new HashMap<>();
+        HashMap<Integer, Integer> buffer = new HashMap<Integer, Integer>();
         buffer.put(1, 1);
         buffer.put(2, 2);
 //        for (int )

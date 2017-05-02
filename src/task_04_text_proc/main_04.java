@@ -18,7 +18,7 @@ public class main_04 {
 
     public static void main(String[] args) {
         // to hash
-        HashSet<Character> delimiters = new HashSet<>();
+        HashSet<Character> delimiters = new HashSet<Character>();
         for (int i = 0; i < DELIMITERS.length(); ++i) {
             delimiters.add(DELIMITERS.charAt(i));
         }

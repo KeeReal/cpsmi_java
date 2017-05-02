@@ -1,16 +1,27 @@
 package task_02_poly.entity;
 
-public class SoundEmitter {
-    private static final String TYPE = "SoundEmitter";
+public abstract class SoundEmitter {
+    private String type = "SoundEmitter";
+    private String message = "I can emit no sounds!";
 
 
     protected String getType() {
-        return TYPE;
+        return type;
     }
 
 
-    protected String getMessage() {
-        return "I can emit no sounds!";
+    public void setType(String type) {
+        this.type = type;
+    }
+
+
+    public String getMessage() {
+        return message;
+    }
+
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 
 

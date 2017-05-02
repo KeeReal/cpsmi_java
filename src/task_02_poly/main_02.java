@@ -13,8 +13,8 @@ public class main_02 {
         entities.add(new Dog());
         entities.add(new Dog());
         entities.add(new Fox());
+        entities.add(new AngryCat());
         entities.add(new Mammal());
-        entities.add(new SoundEmitter());
 
         Iterator<SoundEmitter> it = entities.iterator();
         while (it.hasNext()) {
