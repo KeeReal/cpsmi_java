@@ -23,18 +23,19 @@ public class main_11_client {
         }
 
 
-        PrintStream output = null;
+        /*PrintStream output = null;
         try {
             output = (PrintStream) sock.getOutputStream();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
 
 
         // close
         try {
-            output.close();
+
+//            output.close();
             input.close();
             sock.close();
         } catch (IOException e) {
