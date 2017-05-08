@@ -1,0 +1,72 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
+
+
+def cp=files(project.buildDir.toString() + '/classes/main')
+
+
+task run01(type: JavaExec) {
+    main = 'task_01_hw.main_01'
+    classpath = cp
+}
+
+
+task run02(type: JavaExec) {
+    main = 'task_02_poly.main_02'
+    classpath = cp
+}
+
+
+task run03(type: JavaExec) {
+    if(project.hasProperty('argv')){
+        args(argv.split(','))
+    } else {
+        args = [7];
+    }
+
+    main = 'task_03_fact.main_03'
+    classpath = cp
+}
+
+
+task run04(type: JavaExec) {
+    main = 'task_04_text.main_04'
+    classpath = cp
+}
+
+
+task run05(type: JavaExec) {
+    main = 'task_05_parens.main_05'
+    classpath = cp
+}
+
+
+task run06(type: JavaExec) {
+    main = 'task_06_ui_counter.main_06'
+    classpath = cp
+}
+
+
+task run07(type: JavaExec) {
+    main = 'task_07_notepad.main_07'
+    classpath = cp
+}
+
+
+task run08(type: JavaExec) {
+    main = 'task_08_threads.main_08'
+    classpath = cp
+}
+
+
+task run12(type: JavaExec) {
+    main = 'task_12_fio.main_12'
+    classpath = cp
+}
